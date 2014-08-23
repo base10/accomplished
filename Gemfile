@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 ruby "2.1.2"
 
-gem "airbrake"
+# gem "airbrake"
 gem "bourbon", "~> 3.2.1"
 gem "coffee-rails"
 gem "delayed_job_active_record"
@@ -15,9 +15,9 @@ gem "neat", "~> 1.5.1"
 gem "normalize-rails", "~> 3.0.0"
 gem "pg"
 gem "rack-timeout"
-gem "rails", "4.1.4"
+gem "rails", "4.2.0.beta1"
 gem "recipient_interceptor"
-gem "sass-rails", "~> 4.0.3"
+gem "sass-rails", "~> 5.0.0.beta1"
 gem "simple_form"
 gem "title"
 gem "uglifier"
@@ -47,6 +47,6 @@ group :test do
   gem "webmock"
 end
 
-group :staging, :production do
-  gem "newrelic_rpm", ">= 3.7.3"
-end
+# group :staging, :production do
+#   gem "newrelic_rpm", ">= 3.7.3"
+# end
