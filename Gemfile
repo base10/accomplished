@@ -35,6 +35,7 @@ group :development, :test do
   gem "factory_girl_rails"
   gem "pry-rails"
   gem "rspec-rails", "~> 3.0.0"
+  gem 'guard-rspec', require: false
 end
 
 group :test do
@@ -42,7 +43,7 @@ group :test do
   gem "database_cleaner"
   gem "formulaic"
   gem "launchy"
-  gem "shoulda-matchers", require: false
+  #gem "shoulda-matchers", require: false
   gem "timecop"
   gem "webmock"
 end
