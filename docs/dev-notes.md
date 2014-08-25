@@ -24,3 +24,4 @@ context: |
 ### 2014-08-24
 
 - v1 Schema completed
+- Decision: Start with [Clearance](https://github.com/thoughtbot/clearance/) for authentication and light authorization
