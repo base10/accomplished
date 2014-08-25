@@ -25,3 +25,4 @@ context: |
 
 - v1 Schema completed
 - Decision: Start with [Clearance](https://github.com/thoughtbot/clearance/) for authentication and light authorization
+- Users scaffold built with Clearance gem
