@@ -271,6 +271,7 @@ DEPENDENCIES
   awesome_print
   bourbon (~> 3.2.1)
   byebug
+  capybara (~> 2.4.1)
   capybara-webkit (>= 1.2.0)
   clearance
   coffee-rails
