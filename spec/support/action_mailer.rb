@@ -1,5 +1,3 @@
 RSpec.configure do |config|
-  config.before(:each) do
-    ActionMailer::Base.deliveries.clear
-  end
+  config.before(:each) { ActionMailer::Base.deliveries.clear }
 end
