@@ -22,6 +22,10 @@ RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
   config.order = "random"
   config.use_transactional_fixtures = false
+  config.run_all_when_everything_filtered = true
+  config.filter_run_including :focus => true
+
+  config.include FactoryGirl::Syntax::Methods
 end
 
 ActiveRecord::Migration.maintain_test_schema!
