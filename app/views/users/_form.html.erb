@@ -1,3 +1,4 @@
+<section id="sign_up">
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
@@ -11,7 +12,31 @@
     </div>
   <% end %>
 
+  <ol>
+  	<li>
+      <%= f.label :first_name %>
+  	  <%= f.text_field :first_name %>
+  	</li>
+  	<li>
+      <%= f.label :last_name %>
+      <%= f.text_field :last_name %>
+  	</li>
+
+  	<li>
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+  	</li>
+
+  	<li>
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+  	</li>
+  </ol>
+
+
+
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+</section>
