@@ -1,9 +1,10 @@
 source "https://rubygems.org"
 
-ruby "2.1.3"
+ruby "2.2.0"
 
 # gem "airbrake"
-gem "bourbon", "~> 3.2.1"
+gem "bitters"
+gem "bourbon", "~> 4.2.0"
 gem "coffee-rails"
 gem "delayed_job_active_record"
 gem "email_validator"
@@ -11,17 +12,17 @@ gem "flutie"
 gem "high_voltage"
 gem "i18n-tasks"
 gem "jquery-rails"
-gem "neat", "~> 1.5.1"
-gem "normalize-rails", "~> 3.0.0"
+gem "neat", "~> 1.7.1"
+gem "normalize-rails", "~> 3.0.1"
 gem "pg"
 gem "rack-timeout"
-gem "rails", "4.2.0.beta2"
+gem "rails", "~> 4.2.0"
 gem "recipient_interceptor"
-gem "sass-rails", "~> 5.0.0.beta1"
+gem "refills"
+gem "sass-rails", "~> 5.0.1"
 gem "simple_form"
 gem "title"
-gem "uglifier"
-gem "unicorn"
+gem "puma"
 gem "clearance"
 
 group :development do
@@ -45,7 +46,7 @@ group :test do
   gem "database_cleaner"
   gem "formulaic"
   gem "launchy"
-  #gem "shoulda-matchers", require: false
+  gem "shoulda-matchers", require: false
   gem "timecop"
   gem "webmock"
 end
