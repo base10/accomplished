@@ -11,6 +11,7 @@ feature 'Visitor signs up' do
 
   scenario 'with valid email and password' do
     sign_up_with 'valid@example.com', 'password'
+    sign_in_with 'valid@example.com', 'password'
 
     user_should_be_signed_in
   end

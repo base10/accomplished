@@ -2,7 +2,6 @@ require 'spec_helper'
 
 feature 'Visitor updates password' do
   scenario 'with valid password' do
-    pending "Not yet implemented"
     user = user_with_reset_password
     update_password user, 'newpassword'
 
@@ -10,7 +9,6 @@ feature 'Visitor updates password' do
   end
 
   scenario 'signs in with new password' do
-    pending "Not yet implemented"
     user = user_with_reset_password
     update_password user, 'newpassword'
     sign_out
@@ -20,12 +18,11 @@ feature 'Visitor updates password' do
   end
 
   scenario 'tries with a blank password' do
-    pending "Not yet implemented"
     user = user_with_reset_password
     visit_password_reset_page_for user
     change_password_to ''
 
-    page.should have_content I18n.t('flashes.failure_after_update')
+    expect(page).to have_content I18n.t('flashes.failure_after_update')
     user_should_be_signed_out
   end
 

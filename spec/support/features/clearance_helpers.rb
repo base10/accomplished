@@ -23,6 +23,7 @@ module Features
 
     def user_should_be_signed_in
       visit root_path
+
       expect(page).to have_button I18n.t('layouts.application.sign_out')
     end
 
